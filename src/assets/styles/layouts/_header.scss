@@ -1,0 +1,23 @@
+.header {
+  height: 20vh;
+  padding: 1%;
+  float: left;
+}
+
+@supports (display: grid) {
+  .header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: auto;
+
+    @media (max-width: $tablet) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    @media (max-width: $smartphone) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+//******************Home page******************//
+
+.nav {
+    font-size: 1vw;
+    font-weight: bolder;
+
+    @media (max-width: $tablet) {
+        font-size: 1.7vw;
+    }
+
+    @media (max-width: $smartphone) {
+        font-size: 4vw;
+    }
+}
+
+.logo {
+    color: $font-color-white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1vw;
+
+    & a {
+        color: $font-color-white;
+
+        & :hover {
+            color: $font-color-white;
+        }
+    }
+
+    @media (max-width: $tablet) {
+        font-size: 2vw;
+    }
+
+    @media (max-width: $smartphone) {
+        font-size: 4vw;
+    }
+}
+
+.social {
+    color: $font-color-white;
+    font-size: 2vw;
+
+    @media (max-width: $tablet) {
+        font-size: 3.5vw;
+    }
+
+    @media (max-width: $smartphone) {
+        font-size: 7vw;
+    }
+}
+
+.content {
+    color: $font-color-white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+//***************actors****************//
+
+.actors__card {
+    font-size: 0.8vw;
+    color: white;
+
+    @media (max-width: $tablet) {
+        font-size: 1.3vw;
+    }
+
+    @media (max-width: $smartphone) {
+        font-size: 3vw;
+    }
+}

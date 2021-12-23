@@ -1,30 +1,58 @@
-/**
- * Use this file to import partials.
- * Do not include SCSS code in this file.
- */
+@tailwind base;
+@tailwind components;
 
+@layer components {
+    .link-header-footer {
+      @apply text-blue-600 hover:text-blue-900 no-underline;
+    }
+
+    .actor-card{
+        @apply text-white text-1vw smartphone:text-3vw m-0.5 text-center w-25percent tablet:w-45percent smartphone:w-full mb-5percent;
+    }
+
+    .actor-card-img{
+        @apply h-161px  object-cover w-80percent rounded leading-4 mb-0.5 max-w-full align-middle object-100percent0;
+    }
+  }
 /**
  * Import variables
  */
 
-@import "variables";
+@import "abstracts/variables";
 
 /**
  * Import npm dependencies
- * see: https://v2.parceljs.org/features/module-resolution/
- * see commented examples below
+ * 
  */
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
+ //@import "bootstrap/scss/bootstrap";
+ @import "../../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+
+/**
+ * Import pages
+ */
+
+@import "pages/home";
+@import "pages/actors";
+@import "pages/article";
+@import "pages/galery";
 
 /**
  * Import layouts
- * It's a best practice to use a different partial for each page
  */
+ @import "layouts/header";
+ @import "layouts/nav";
+ @import "layouts/footer";
 
-@import "layouts/home";
+
+/*
+ *  Import base files
+ */
+ @import "base/typography";
 
 /**
  * Do NOT include anything else in this file!
  */
+
+ @tailwind utilities;

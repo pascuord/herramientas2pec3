@@ -1,26 +1,52 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="test image" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/main.scss">
+  <title>El huérfano de los Zhao</title>
+</head>
+
+<body class="grid grid-cols-index grid-rows-index bg-imgindex bg-no-repeat bg-cover">
+
+  <header class="col-start-1 col-end-3 h-auto p-1 float-left">
+    <div class="text-white uppercase font-bold text-1w">
+      <a href="index.html"><p class="border-gray-500 border-solid border-8 w-3percent smartphone:w-20percent">El huérfano de los Zhao</p></a>
     </div>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+  </header>
+
+  <nav class=" text-white text-1w font-bold col-start-3 col-end-4  w-full h-auto float-right p-1">
+    <ul class="w-full pl-33percent tablet:pl-70percent smartphone:pl-40percent">
+      <li class="inline mr-5percent"><a class="link-header-footer" href="actors.html">Actores</a></li>
+      <li class="inline mr-5percent"><a class="link-header-footer" href="article.html">Blog</a></li>
+      <li class="inline mr-5percent"><a class="link-header-footer" href="galery.html">Galeria</a></li>
+    </ul>
+</nav>
+
+  <main class="col-start-1 col-end-4 row-start-2 row-end-3 w-full h-69vh tablet:h-69vh smartphone:h-62vh p-1 float-left">
+    <div class="text-white italic font-bold text-2vh font-bold">
+      <p class="left-50percent absolute text-justify w-33percent mb-1 mt-0 tablet:left-3percent smartphone:left-3percent smartphone:w-60percent">El huérfano de los Zhao está basada en una obra clásica china acerca de un huérfano que vengará la muerte de su
+        familia. La historia gira en
+        torno a un médico que salva Zhao Wu, el único miembro superviviente de una familia masacrada, sacrificando a su
+        propio hijo. Zhao, con ayuda del doctor Cheng Ying, buscará vengarse de la familia rival y de los asesinos
+        cuando crezca.</p>
+      </div>
+  </main>
+
+  <footer class="col-start-1 col-end-4 row-start-3 row-end-4 h-auto bg-black bg-opacity-50 float-left p-1 w-full ">
+    <div class="text-white uppercase font-bold text-1w float-left">
+      <a href="index.html"><p class="border-gray-500 border-solid border-8 w-20percent">El huérfano de los Zhao</p></a>
+    </div>
+    <div class="text-white text-2vw smartphone:text-7vw float-right">
+            <a href="#" class="link-header-footer"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="link-header-footer"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="link-header-footer"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="link-header-footer"><i class="fab fa-instagram"></i></a>    
+    </div>
+  </footer>
+
+</body>
+
 </html>

@@ -1,0 +1,55 @@
+.actors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+
+.body-actors {
+    background-image: none;
+}
+
+.main-actors {
+    @media (max-width: $smartphone) {
+        height: auto;
+    }
+}
+
+.actors__card {
+    width: 25%;
+    margin: 0.3%;
+    text-align: center;
+
+    & .actors__img {
+        width: 80%;
+        height: 161px;
+        object-fit: cover;
+        object-position: 100% 0px;
+
+        @media (max-width: $tablet) {
+            height: 123px;
+        }
+        @media (max-width: $smartphone) {
+            height: 126px;
+        }
+    }
+
+    & .actors__figcaption {
+        font-weight: bolder;
+    }
+
+    & .actors__p {
+        width: 80%;
+        margin: auto;
+    }
+
+    @media (max-width: $tablet) {
+        width: 45%;
+    }
+
+    @media (max-width: $smartphone) {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+}
